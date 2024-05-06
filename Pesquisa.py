@@ -5,13 +5,13 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 navegador = webdriver.Chrome()
-navegador.get("https://munizpn.com.br/")
+navegador.get("https://www.apotiguar.com.br/")
 
 wait = WebDriverWait(navegador, 10)
 
 try:
     campo_busca = wait.until(EC.presence_of_element_located((By.NAME, "q")))
-    campo_busca.send_keys("maçã")
+    campo_busca.send_keys("Cadeira de Balanço")
     
     time.sleep(2)
 
